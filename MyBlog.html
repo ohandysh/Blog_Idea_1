@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="MyBlog.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <title>MyBlog</title>
+        <script src="https://kit.fontawesome.com/cd077634eb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- -----------Header--------------- -->
+        <script src="MyBlog.js"></script>
+        <section class="header">
+            <nav>
+                <a href="MyBlog.html"><img src="images/logo.png" alt=""></a>
+                <div class="nav-links" id = "navLinks">
+                    <i class="fa-solid fa-angles-right" onClick = "hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">WORKS</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onClick = "showMenu()"></i>
+            </nav> 
+        <div class="text-box">
+            <h1>I'm Andy</h1>
+            <p>Why are we living so fast, do we even realize it?</p>
+            <a href="" class="main-btn"> Look for your answers here </a>
+        </div>
+        </section>
+
+        <!-- -------Updates------- -->
+        <section class="updates">
+                <h1>Latest Updates</h1>
+                <p>Here are the latest updates</p>
+
+                <div class="row">
+                    <div class = "update">
+                        <h3>AI</h3>
+                        <p>Latest updates on <br>AI</p>
+                    </div>
+                    <div class = "update">
+                        <h3>Data Analysis</h3>
+                        <p>Latest updates on <br>Data Analysis</p>
+                    </div>
+                    <div class = "update">
+                        <h3>Finance</h3>
+                        <p>Latest updates on <br>Finance</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- ------works------ -->
+        <section class="works">
+            <h1>What I Can Do</h1>
+            <p>I Will Be Everything You Need</p>
+
+            <div class="row">
+                <div class="capabilities">
+                    <img src="images/london.png" alt="">
+                    <div class="layer">
+                        <h3>Photography</h3>
+                    </div>
+                </div>
+                <div class="capabilities">
+                    <img src="images/newyork.png" alt="">
+                    <div class="layer">
+                        <h3>Coding</h3>
+                    </div>
+                </div>
+                <div class="capabilities">
+                    <img src="images/washington.png" alt="">
+                    <div class="layer">
+                        <h3>Analysis</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ------ Facilities ------ -->
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>These are our Facilities</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png" alt="">
+                    <h3>World Calss Library</h3>
+                    <p>Imagine what you can do </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/basketball.png" alt="">
+                    <h3>Largest Playground</h3>
+                    <p>Imagine what you can do </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png" alt="">
+                    <h3>Tasty and Healtyh</h3>
+                    <p>Imagine what you can do </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------Reviews------ -->
+        <section class="testimonials">
+            <h1>Experiences</h1>
+            <p><strong>Here are some of my many qualifications</strong> </p>
+
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="images/UMG.jpeg" alt="">
+                    <div>
+                        <p>International Pop Marketing<br>Partnership Management
+                        </p>
+                        <h3>Universal Music Group</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="images/Berklee.png" alt="">
+                    <div>
+                        <p>Music Production & Eningeering [Summa Cum Laude]<br>Student Ambassdor at Class Technology</p>
+                        <h3>Berklee College of Music</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ------Call To Action----- -->
+
+        <section class="cta">
+            <h1>I'm Here For You</h1>
+            <a href="" class="main-btn">CONTACT US</a>
+        </section>
+
+
+        <!-- -------Comment-------- -->
+        <section class="footer">
+            <h4>About Me</h4>
+            <p>If you ever come across the things that you would kill for</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with Love by NDO</p>
+        </section>
+
+
+        <!-- ------JavaScript for Toggle Menu------ -->
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-188px";
+            }
+        </script>
+
+    </body>
+</html>
